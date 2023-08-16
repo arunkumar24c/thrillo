@@ -38,7 +38,7 @@ const Gridcontainer = () => {
         </div>
       </div>
       {/* right container */}
-      <div className="grid grid-cols-3  sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-3  sm:grid-cols-3 gap-2 overflow-x-auto">
         {/* 1st */}
         <div
           className="w-full sm:w-[146px] h-[223px] bg-no-repeat bg-cover rounded-xl flex justify-center items-center"

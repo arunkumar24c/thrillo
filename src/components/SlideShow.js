@@ -83,7 +83,7 @@ const SlideShow = () => {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
           initialSlide: 1,
@@ -92,7 +92,7 @@ const SlideShow = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
         },
       },

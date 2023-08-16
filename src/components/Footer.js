@@ -238,8 +238,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-white justify-center items-center flex flex-col md:flex-row sm:flex-col xl:flex-row lg:flex-row xl:justify-around lg:justify-around md:items-baseline lg:items-baseline xl:items-baseline mb-5 sm:justify-center sm:items-center md:justify-between mt-5 container mx-auto">
-          <div className="text-white sm:text-center">
+        <div className="text-white justify-center items-center flex flex-col md:flex-row sm:flex-col xl:flex-row lg:flex-row xl:justify-around lg:justify-around md:items-baseline lg:items-baseline xl:items-baseline mb-5 sm:justify-center  md:justify-between mt-5 container mx-auto">
+          <div className="flex flex-col justify-center items-center">
             <h2 className="text-[#696969]">Pickyourtrail</h2>
             <p>About Us</p>
             <p>Careers</p>
@@ -248,7 +248,7 @@ const Footer = () => {
             <p>Visa</p>
             <p>Press</p>
           </div>
-          <div className="text-white sm:text-center">
+          <div className="flex flex-col justify-center items-center">
             <h2 className="text-[#696969]">Policy</h2>
             <p>Frequently asked Question</p>
             <p>Terms & Conditions</p>
@@ -257,7 +257,7 @@ const Footer = () => {
             <p>Sitemap</p>
             <p>Contact Us</p>
           </div>
-          <div className="text-white sm:text-center">
+          <div className="flex flex-col justify-center items-center">
             <h2 className="text-[#696969]">Talk to Us</h2>
             <p className="flex gap-2 pt-2">
               <span>
