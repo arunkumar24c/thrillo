@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.app{
+  background-image: url(https://static.wixstatic.com/media/747bc2_0b9be525148a4020860844f82515cb57~mv2.jpg/v1/fill/w_980,h_592,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/747bc2_0b9be525148a4020860844f82515cb57~mv2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
