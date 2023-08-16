@@ -239,7 +239,7 @@ const Footer = () => {
         </div>
 
         <div className="text-white justify-center items-center flex flex-col md:flex-row sm:flex-col xl:flex-row lg:flex-row xl:justify-around lg:justify-around md:items-baseline lg:items-baseline xl:items-baseline mb-5 sm:justify-center sm:items-center md:justify-between mt-5 container mx-auto">
-          <div className="text-white ">
+          <div className="text-white sm:text-center">
             <h2 className="text-[#696969]">Pickyourtrail</h2>
             <p>About Us</p>
             <p>Careers</p>
@@ -248,7 +248,7 @@ const Footer = () => {
             <p>Visa</p>
             <p>Press</p>
           </div>
-          <div className="text-white ">
+          <div className="text-white sm:text-center">
             <h2 className="text-[#696969]">Policy</h2>
             <p>Frequently asked Question</p>
             <p>Terms & Conditions</p>
@@ -257,7 +257,7 @@ const Footer = () => {
             <p>Sitemap</p>
             <p>Contact Us</p>
           </div>
-          <div className="text-white ">
+          <div className="text-white sm:text-center">
             <h2 className="text-[#696969]">Talk to Us</h2>
             <p className="flex gap-2 pt-2">
               <span>
@@ -278,42 +278,44 @@ const Footer = () => {
               +917806805380
             </p>
           </div>
-          <div className="text-white ">
-            <h2 className="text-[#696969]">Social</h2>
-            <p className="flex gap-2 pt-2">
-              <span>
-                <FaFacebookF />
-              </span>
-              Facebook
-            </p>
-            <p className="flex gap-2 pt-2">
-              <span>
-                <FiTwitter />
-              </span>
-              Twitter
-            </p>
-            <p className="flex gap-2 pt-2">
-              <span>
-                <FaInstagram />
-              </span>
-              Instagram
-            </p>
-            <p className="flex gap-2 pt-2">
-              <span>
-                <AiFillYoutube />
-              </span>
-              Linkedin
-            </p>
-            <p className="flex gap-2 pt-2">
-              <span>
-                <AiOutlineLink />
-              </span>
-              Youtube
-            </p>
-            <p className="pb-2 pt-2">
-              Travel Troops Global Private Ltd. © 2023
-            </p>
-            <p className="pb-6">all rights reserved.</p>
+          <div className="text-white text-center">
+            <h2 className="text-[#696969] text-center">Social</h2>
+            <div className="flex flex-col justify-center items-center">
+              <p className="flex gap-2 pt-2 sm:text-center justify-center items-center">
+                <span>
+                  <FaFacebookF />
+                </span>
+                Facebook
+              </p>
+              <p className="flex gap-2 pt-2 ">
+                <span>
+                  <FiTwitter />
+                </span>
+                Twitter
+              </p>
+              <p className="flex gap-2 pt-2 ">
+                <span>
+                  <FaInstagram />
+                </span>
+                Instagram
+              </p>
+              <p className="flex gap-2 pt-2 ">
+                <span>
+                  <AiFillYoutube />
+                </span>
+                Linkedin
+              </p>
+              <p className="flex gap-2 pt-2 ">
+                <span>
+                  <AiOutlineLink />
+                </span>
+                Youtube
+              </p>
+              <p className="pb-2 pt-2">
+                Travel Troops Global Private Ltd. © 2023
+              </p>
+              <p className="pb-6 ">all rights reserved.</p>
+            </div>
           </div>
         </div>
       </div>
