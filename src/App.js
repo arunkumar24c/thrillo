@@ -14,6 +14,7 @@ import Popular1 from "./components/Slider/Popular1";
 import Popular2 from "./components/Slider/Popular2";
 import Hero from "./components/Hero";
 
+
 const App = () => {
   return (
     <div>
@@ -28,6 +29,7 @@ const App = () => {
 
       <Banner />
       <SlideShow />
+     
       <Patner />
       <Footer />
     </div>

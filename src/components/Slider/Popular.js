@@ -60,7 +60,7 @@ const Popular = () => {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           arrows: false,
           initialSlide: 1,
@@ -69,7 +69,7 @@ const Popular = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -77,31 +77,50 @@ const Popular = () => {
   };
 
   return (
-    <div className="relative container mx-auto text-center mt-10">
-      <div className="flex flex-col justify-center items-center mb-4 overflow-x-auto">
-        <h1 className="text-black font-bold text-2xl pb-3">
-          Best of India
-        </h1>
-        <a className="border-2 border-b-[red] border-[white] w-11"></a>
-      </div>
-      <Slider ref={slider} {...settings}>
-        {data.map((values, index) => (
-          <div className="mx-1" key={index}>
-            <PopularDestinationCard {...values} />
-          </div>
-        ))}
-      </Slider>
+    <div>
+      <div className="relative container mx-auto text-center mt-10 hidden xl:block lg:block">
+        <div className="flex flex-col justify-center items-center mb-4 overflow-x-auto">
+          <h1 className="text-black font-bold text-2xl pb-3">Best of India</h1>
+          <a className="border-2 border-b-[red] border-[white] w-11"></a>
+        </div>
+        <Slider ref={slider} {...settings}>
+          {data.map((values, index) => (
+            <div className="mx-1" key={index}>
+              <PopularDestinationCard {...values} />
+            </div>
+          ))}
+        </Slider>
 
-      <ArrowNext
-        Handler={() => {
-          slider?.current?.slickNext();
-        }}
-      />
-      <ArrowPrev
-        Handler={() => {
-          slider?.current?.slickPrev();
-        }}
-      />
+        <ArrowNext
+          Handler={() => {
+            slider?.current?.slickNext();
+          }}
+        />
+        <ArrowPrev
+          Handler={() => {
+            slider?.current?.slickPrev();
+          }}
+        />
+      </div>
+      {/* md and sm  */}
+      <div className=" flex  flex-col items-center justify-center my-5 xl:hidden lg:hidden overflow-scroll">
+        {/* left container  */}
+        <div>
+          <h1 className="text-black font-bold text-2xl pb-3">Best of India</h1>
+          <a className="border-2 border-b-[red] border-[white] w-11"></a>
+        </div>
+        {/* right container  */}
+        <div class="">
+          <div class="flex h-80 gap-4   overflow-x-scroll hide-scrollbar">
+            <img src={img} class="" alt="Image 1" />
+
+            <img src={img1} class="" alt="Image 2" />
+
+            <img src={img2} class="" alt="Image 3" />
+            <img src={img3} class="" alt="Image 3" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
@@ -116,7 +135,6 @@ const PopularDestinationCard = (props) => {
     </div>
   );
 };
-
 
 const ArrowNext = (props) => {
   return (
@@ -139,6 +157,5 @@ const ArrowPrev = (props) => {
     </div>
   );
 };
-
 
 export default Popular;

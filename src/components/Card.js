@@ -1,6 +1,6 @@
-import React from 'react'
-import img from "../assest/Link_margin.png"
-import img1 from "../assest/escapes-3@1x-90acb5a6c9c91af6043748429043549d51a7cbc27094a20f684b3edab98cab1f.jpg.png"
+import React from "react";
+import img from "../assest/Link_margin.png";
+import img1 from "../assest/escapes-3@1x-90acb5a6c9c91af6043748429043549d51a7cbc27094a20f684b3edab98cab1f.jpg.png";
 import img2 from "../assest/Link.png";
 
 const Card = () => {
@@ -16,21 +16,17 @@ const Card = () => {
         <p className="text-[#494949]">Discover your ideal Experience</p>
       </div>
       {/* right container  */}
-      <div class="overflow-x-auto">
-        <div class="flex flex-row gap-4 w-[100vh]">
-          <div>
-            <img src={img} class="" alt="Image 1" />
-          </div>
-          <div>
-            <img src={img1} class="" alt="Image 2" />
-          </div>
-          <div>
-            <img src={img2} class="" alt="Image 3" />
-          </div>
+      <div class="">
+        <div class="flex h-80 gap-4   overflow-x-scroll">
+          <img src={img} class="" alt="Image 1" />
+
+          <img src={img1} class="" alt="Image 2" />
+
+          <img src={img2} class="" alt="Image 3" />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Card
+export default Card;

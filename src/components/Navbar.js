@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="app">
+      <div className="">
         <div
           className={`sticky top-0 left-0 w-full p-3 ${
             isSticky ? "bg-white text-white " : "text-white "

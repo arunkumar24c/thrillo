@@ -132,22 +132,27 @@ const SlideShow = () => {
 
 const PopularDestinationCard = (props) => {
   return (
-    <div className="flex flex-col  items-center">
-      <div className="relative container mx-auto text-center xl:ml-11 w-[222px] h-auto">
-        <img src={props.image} alt="" className="w-[222px] h-[301px]" />
-        <div className="absolute bottom-2 left-[5rem] space-y-2 text-center">
-          <p className="text-white font-bold">{props.name}</p>
+    <div>
+      <div className="flex flex-col  items-center">
+        <div className="relative container mx-auto text-center xl:ml-11 w-[222px] h-auto">
+          <img src={props.image} alt="" className="w-[222px] h-[301px]" />
+          <div className="absolute bottom-2 left-[5rem] space-y-2 text-center">
+            <p className="text-white font-bold">{props.name}</p>
+          </div>
+        </div>
+        <div className="w-[222px] ">
+          <p className="pb-1">{props.title}</p>
+          <p className="flex pb-1 gap-1 text-[#696969] text-[12px]">
+            <AiFillStar size={20} className="text-[yellow] " />
+            <span>{props.rating}</span>
+          </p>
+          <p className="line-through text-[#696969] pr-[8rem] text-[12px]">
+            {props.amount}
+          </p>
+          <p className="text-md text-black pr-[8rem]">{props.discount}</p>
         </div>
       </div>
-      <div className="w-[222px] ">
-        <p className="pb-1">{props.title}</p>
-        <p className="flex pb-1 gap-1 text-[#696969] text-[12px]">
-          <AiFillStar size={20} className="text-[yellow] " />
-          <span>{props.rating}</span>
-        </p>
-        <p className="line-through text-[#696969] pr-[8rem] text-[12px]">{props.amount}</p>
-        <p className="text-md text-black pr-[8rem]">{props.discount}</p>
-      </div>
+
     </div>
   );
 };
