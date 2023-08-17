@@ -339,7 +339,7 @@ const FaqElement = (props) => {
           <p className="font-bold text-xl text-[#494949] cursor-pointer">
             {props.title}
           </p>
-          <div className="cursor-pointer text-white xl:hidden">
+          <div className="cursor-pointer text-white xl:hidden lg:hidden">
             {show ? <FaqLess /> : <FaqMore />}
           </div>
         </div>
