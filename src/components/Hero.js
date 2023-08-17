@@ -32,7 +32,7 @@ const Hero = () => {
             repeat={Infinity}
           />
         </span>
-        <div className="hidden xl:block ">
+        {/* <div className="hidden xl:block ">
           <div className="mt-5 flex  gap-1">
             <p className="flex items-center gap-1 border-2 border-[gray] bg-[#3e3e3f] py-1 px-3 sm:py-2 sm:px-4">
               <GiEarthAsiaOceania />
@@ -55,7 +55,7 @@ const Hero = () => {
               Staycations
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="mt-3 sm:mt-0 sm:ml-3.5">
           <div className="relative rounded-lg shadow-md bg-white">
             <input

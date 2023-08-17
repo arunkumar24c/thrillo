@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../assest/Thailand-c233d380c78411959ef6992e4ecc205705128339a0c7946af053559de75447f7.jpg.png";
-import img1 from "../assest/Singapore-31c6e6f733ae0b41778758679f73e145aef982a3e8b8b968886e1abe804b0735.jpg.png";
-import img2 from "../assest/Bali-018e38260057e1baa12520852d2edf4a2e74821879109269cb9b653fdff43e92.jpg.png";
-import img3 from "../assest/Vietnam-5cad282399f479a54dd8a92b63b97241bb4e49170f496c1cb502baee308c367f.jpg.png";
+import img from "../../assest/Thailand-c233d380c78411959ef6992e4ecc205705128339a0c7946af053559de75447f7.jpg.png";
+import img1 from "../../assest/Singapore-31c6e6f733ae0b41778758679f73e145aef982a3e8b8b968886e1abe804b0735.jpg.png";
+import img2 from "../../assest/Bali-018e38260057e1baa12520852d2edf4a2e74821879109269cb9b653fdff43e92.jpg.png";
+import img3 from "../../assest/Vietnam-5cad282399f479a54dd8a92b63b97241bb4e49170f496c1cb502baee308c367f.jpg.png";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const data = [
