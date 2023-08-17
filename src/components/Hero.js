@@ -6,7 +6,7 @@ import { GiEarthAsiaOceania, GiParachute } from "react-icons/gi";
 import { TbTargetArrow } from "react-icons/tb";
 import { GoPerson } from "react-icons/go";
 import { FaHandHoldingUsd } from "react-icons/fa";
-import Card from "./Card";
+import Card from "./ImgExperience";
 
 const Hero = () => {
   return (
@@ -61,7 +61,7 @@ const Hero = () => {
             <input
               type="text"
               placeholder="Search Destination, tours, Activities...."
-              className="pl-2 py-1.5 sm:py-2 rounded-l-lg focus:outline-none w-full sm:w-full xl:w-[45rem] lg:w-[40rem] md:w-[37rem]"
+              className="pl-2 py-1.5 sm:py-2 rounded-l-lg focus:outline-none w-full sm:w-[20rem] xl:w-[45rem] lg:w-[40rem] md:w-[37rem]"
             />
             <span className="absolute top-0 right-0 text-[gray] p-2">
               <AiOutlineSearch size={25} />
@@ -105,7 +105,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    
     </div>
   );
 };

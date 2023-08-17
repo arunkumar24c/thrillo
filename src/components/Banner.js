@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../assest/Tabpanel → maldives-banner-desktop-6610a2e8903968c7426cfcc76019d290911a506c6ac0ab577a4a853624591ee2.png.png";
+import img from "../assest/maldives-banner.png";
 
 
 export default class SimpleSlider extends Component {

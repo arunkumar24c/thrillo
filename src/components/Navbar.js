@@ -4,10 +4,10 @@ import { GoGift } from "react-icons/go";
 import { FiChevronDown } from "react-icons/fi";
 import { SlMenu } from "react-icons/sl";
 
-import img from "../assest/thrillo-logo.png";
+// import img from "../assest/thrillo-logo.png";
 import { RiCloseLine } from "react-icons/ri";
 import Hero from "./Hero";
-import Card from "./Card";
+// import Card from "./Card";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);

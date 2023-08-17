@@ -2,36 +2,36 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../../assest/Thailand-c233d380c78411959ef6992e4ecc205705128339a0c7946af053559de75447f7.jpg.png";
-import img1 from "../../assest/Singapore-31c6e6f733ae0b41778758679f73e145aef982a3e8b8b968886e1abe804b0735.jpg.png";
-import img2 from "../../assest/Bali-018e38260057e1baa12520852d2edf4a2e74821879109269cb9b653fdff43e92.jpg.png";
-import img3 from "../../assest/Vietnam-5cad282399f479a54dd8a92b63b97241bb4e49170f496c1cb502baee308c367f.jpg.png";
+import img from "../../assest/Maldives.png";
+import img1 from "../../assest/Andaman.png";
+import img2 from "../../assest/Seychelles.png";
+import img3 from "../../assest/Mauritius.png";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const data = [
   {
-    name: "THAILAND",
+    name: "MALDIVES",
     image: img,
   },
   {
-    name: "SINGAPORE",
+    name: "ANDAMAN",
     image: img1,
   },
   {
-    name: "BALI",
+    name: "SEYCHELLES",
     image: img2,
   },
   {
-    name: "VIETNAM",
+    name: "MAURITIUS",
     image: img3,
   },
   {
-    name: "MALAYSIA",
+    name: "PHILIPPINES",
     image: img3,
   },
 ];
 
-const PopularDestinations = () => {
+const BestIsland = () => {
   const slider = useRef(null);
 
   const settings = {
@@ -79,10 +79,9 @@ const PopularDestinations = () => {
     <div>
       <div className="relative container mx-auto text-center hidden xl:block lg:block mt-10">
         <div className="flex flex-col justify-center items-center mb-4">
-          <h1 className="text-black font-bold text-2xl pb-3">Island Escapes</h1>
+          <h1 className="text-black font-bold text-2xl pb-3">Best of Europe</h1>
           <a className="border-2 border-b-[red] border-[white] w-11"></a>
         </div>
-
         <Slider ref={slider} {...settings}>
           {data.map((values, index) => (
             <div className="mx-1" key={index}>
@@ -102,10 +101,10 @@ const PopularDestinations = () => {
           }}
         />
       </div>
-      <div className=" flex  flex-col items-center justify-center my-5 xl:hidden lg:hidden overflow-scroll ">
+      <div className=" flex  flex-col items-center justify-center my-5 xl:hidden lg:hidden overflow-scroll">
         {/* left container  */}
         <div>
-          <h1 className="text-black font-bold text-2xl pb-3">Island Escapes</h1>
+          <h1 className="text-black font-bold text-2xl pb-3">Best of Europe</h1>
           <a className="border-2 border-b-[red] border-[white] w-11"></a>
         </div>
         {/* right container  */}
@@ -135,6 +134,7 @@ const PopularDestinationCard = (props) => {
   );
 };
 
+
 const ArrowNext = (props) => {
   return (
     <div
@@ -158,4 +158,5 @@ const ArrowPrev = (props) => {
 };
 
 
-export default PopularDestinations;
+
+export default BestIsland;

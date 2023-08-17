@@ -2,36 +2,36 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../../assest/Maldives-940e95d8a51bbdf0eae0b47a96372d576014acad961e27f1c1ea5204a52f43c1.jpg.png";
-import img1 from "../../assest/Andaman-3f95e79f645565ba86508f113e8b9af008d5284d205e37f6b53ac2628c5bff2f.jpg.png";
-import img2 from "../../assest/Seychelles-cb4da5bf176ecc0eafb0636c5c24d6c64071cd7b433ee7854cbf9acf8d1db464.jpg.png";
-import img3 from "../../assest/Mauritius-e9c8c4761cad8bf21f4a848e253932fdcabbe77e1e04237df417c6ac3baa77f8.jpg.png";
+import img from "../../assest/Europe.png";
+import img1 from "../../assest/Switzerland.png";
+import img2 from "../../assest/Greece.png";
+import img3 from "../../assest/Turkey.png";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const data = [
   {
-    name: "MALDIVES",
+    name: "EUROPE",
     image: img,
   },
   {
-    name: "ANDAMAN",
+    name: "SWITZERLAND",
     image: img1,
   },
   {
-    name: "SEYCHELLES",
+    name: "GREECE",
     image: img2,
   },
   {
-    name: "MAURITIUS",
+    name: "TURKEY",
     image: img3,
   },
   {
-    name: "PHILIPPINES",
+    name: "PARIS",
     image: img3,
   },
 ];
 
-const Popular2 = () => {
+const BestEurope = () => {
   const slider = useRef(null);
 
   const settings = {
@@ -79,7 +79,9 @@ const Popular2 = () => {
     <div>
       <div className="relative container mx-auto text-center hidden xl:block lg:block mt-10">
         <div className="flex flex-col justify-center items-center mb-4">
-          <h1 className="text-black font-bold text-2xl pb-3">Best of Europe</h1>
+          <h1 className="text-black font-bold text-2xl pb-3">
+            Best of South East Asia
+          </h1>
           <a className="border-2 border-b-[red] border-[white] w-11"></a>
         </div>
         <Slider ref={slider} {...settings}>
@@ -101,10 +103,13 @@ const Popular2 = () => {
           }}
         />
       </div>
+      {/* md and sm  */}
       <div className=" flex  flex-col items-center justify-center my-5 xl:hidden lg:hidden overflow-scroll">
         {/* left container  */}
         <div>
-          <h1 className="text-black font-bold text-2xl pb-3">Best of Europe</h1>
+          <h1 className="text-black font-bold text-2xl pb-3">
+            Best of South East Asia
+          </h1>
           <a className="border-2 border-b-[red] border-[white] w-11"></a>
         </div>
         {/* right container  */}
@@ -158,5 +163,4 @@ const ArrowPrev = (props) => {
 };
 
 
-
-export default Popular2;
+export default BestEurope;

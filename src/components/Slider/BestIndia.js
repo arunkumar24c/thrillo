@@ -2,36 +2,37 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../../assest/Europe-6be7b8a3e2532172e32e292bcaabb5d9ad3b49c4e702f9b30632a3a335e771be.jpg.png";
-import img1 from "../../assest/Switzerland-54ede59aab13af19ecda81e5c004b28e4d5602eb6d8b7098b62b454de8e0f673.jpg.png";
-import img2 from "../../assest/Greece-8f2ba51a8ba482afcd2c1cb783ae1bc3e800ddf6f5350cfef8c417ec72653fc9.jpg.png";
-import img3 from "../../assest/Turkey-b38c3545d8399d0b349bdec4ba39b37178996bbb08ff00d133dc2280dda63cfb.jpg.png";
+import img from "../../assest/Ladakh.png";
+import img1 from "../../assest/Kerela.png";
+import img2 from "../../assest/NorthEast.png";
+import img3 from "../../assest/Himachal.png";
+
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const data = [
   {
-    name: "EUROPE",
+    name: "LADAKH",
     image: img,
   },
   {
-    name: "SWITZERLAND",
+    name: "KERALA",
     image: img1,
   },
   {
-    name: "GREECE",
+    name: "HIMACHAL PRADESH",
     image: img2,
   },
   {
-    name: "TURKEY",
+    name: "NORTH EAST",
     image: img3,
   },
   {
-    name: "PARIS",
+    name: "UTTARAKHAND",
     image: img3,
   },
 ];
 
-const Popular1 = () => {
+const BestIndia = () => {
   const slider = useRef(null);
 
   const settings = {
@@ -59,7 +60,7 @@ const Popular1 = () => {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           arrows: false,
           initialSlide: 1,
@@ -68,7 +69,7 @@ const Popular1 = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -77,11 +78,9 @@ const Popular1 = () => {
 
   return (
     <div>
-      <div className="relative container mx-auto text-center hidden xl:block lg:block mt-10">
-        <div className="flex flex-col justify-center items-center mb-4">
-          <h1 className="text-black font-bold text-2xl pb-3">
-            Best of South East Asia
-          </h1>
+      <div className="relative container mx-auto text-center mt-10 hidden xl:block lg:block">
+        <div className="flex flex-col justify-center items-center mb-4 overflow-x-auto">
+          <h1 className="text-black font-bold text-2xl pb-3">Best of India</h1>
           <a className="border-2 border-b-[red] border-[white] w-11"></a>
         </div>
         <Slider ref={slider} {...settings}>
@@ -107,9 +106,7 @@ const Popular1 = () => {
       <div className=" flex  flex-col items-center justify-center my-5 xl:hidden lg:hidden overflow-scroll">
         {/* left container  */}
         <div>
-          <h1 className="text-black font-bold text-2xl pb-3">
-            Best of South East Asia
-          </h1>
+          <h1 className="text-black font-bold text-2xl pb-3">Best of India</h1>
           <a className="border-2 border-b-[red] border-[white] w-11"></a>
         </div>
         {/* right container  */}
@@ -130,7 +127,7 @@ const Popular1 = () => {
 
 const PopularDestinationCard = (props) => {
   return (
-    <div className="relative container mx-auto text-center xl:ml-11">
+    <div className="relative container mx-auto text-center xl:ml-11 overflow-x-auto">
       <img src={props.image} alt="" className="w-[222px] h-[301px]" />
       <div className="absolute bottom-2 left-[5rem] space-y-2 text-center">
         <p className="text-white font-bold">{props.name}</p>
@@ -139,12 +136,11 @@ const PopularDestinationCard = (props) => {
   );
 };
 
-
 const ArrowNext = (props) => {
   return (
     <div
       onClick={props.Handler}
-      className="cursor-pointer absolute inset-y-1/2 xl:bg-white right-4 w-14 h-14 bg-brnd-dark-blue rounded-full flex justify-center items-center "
+      className="cursor-pointer absolute inset-y-1/2 xl:bg-white right-4 w-14 h-14  rounded-full flex justify-center items-center "
     >
       <AiOutlineArrowRight className="hidden xl:block " />
     </div>
@@ -162,5 +158,4 @@ const ArrowPrev = (props) => {
   );
 };
 
-
-export default Popular1;
+export default BestIndia;

@@ -1,30 +1,24 @@
 import React from "react";
-import img from "../assest/Link_margin.png";
-import img1 from "../assest/escapes-3@1x-90acb5a6c9c91af6043748429043549d51a7cbc27094a20f684b3edab98cab1f.jpg.png";
-import img2 from "../assest/Link.png";
+import img from "../assest/group_tour_enqiry.png.png";
 
 const Card = () => {
   return (
-    <div className=" flex  flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col  items-center justify-center my-5 overflow-scroll">
-      {/* left container  */}
-      <div>
-        <h1 className="font-bold text-2xl pb-5">
-          Find The Perfect
-          <br /> Escape
-        </h1>
-        <hr className="border-[red] w-[4.5rem] pb-2" />
-        <p className="text-[#494949]">Discover your ideal Experience</p>
-      </div>
-      {/* right container  */}
-      <div class="">
-        <div class="flex h-80 gap-4   overflow-x-scroll">
-          <img src={img} class="" alt="Image 1" />
-
-          <img src={img1} class="" alt="Image 2" />
-
-          <img src={img2} class="" alt="Image 3" />
+  
+    <div className=" container mx-auto flex flex-col sm:flex-col md:flex-col xl:flex-row lg:flex-row  border-2 border-[orange] xl:justify-around xl:w-[1080px] xl:h-[112px]">
+      <div className="flex gap-2 p-1 ">
+        <img src={img} className="w-[100px] h-[100px] md:w-[100px] md:h-[100px] xl:w-[90px] xl:h-[90px]" />
+        <div className="md:mt-3">
+          <h1 className="text-2xl sm:text-xl font-bold text-orange-400">
+            Bigger Group? Get special offers upto 50% off!
+          </h1>{" "}
+          <p className="text-[#696969] text-base font-semibold">
+            We create unforgettable adventures, customised for your group.
+          </p>
         </div>
       </div>
+      <button className="xl:w-[13rem] font-bold text-white xl:h-[3rem] sm:w-full h-[2.5rem] lg::w-[13rem] lg:h-[3rem] md:w-[13rem] md:h-[3rem] md:ml-[8rem] md:mb-2 rounded-md xl:mt-5 lg:mt-5 bg-orange-500 sm:mb-2 ">
+        Get a Callback
+      </button>
     </div>
   );
 };
